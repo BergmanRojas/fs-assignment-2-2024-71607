@@ -1,0 +1,163 @@
+/* NAVBAR PRINCIPAL */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #232f3e; /* Fondo oscuro para el navbar */
+  color: #d3d3d3;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 100vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .logo img {
+    height: 50px;
+    object-fit: contain;
+  }
+
+  /* MENÚ DESPLEGABLE */
+  .menu-container {
+    position: relative;
+
+    .menu-btn {
+      padding: 0.7rem 1.2rem;
+      background-color: transparent;
+      color: #d3d3d3;
+      border: 1px solid transparent;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .menu-btn:hover {
+      color: white;
+      border-color: white;
+    }
+
+    /* Estilos del menú desplegable */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%; /* Empieza donde termina el navbar */
+      left: 0;
+      background: #f4f4f4; /* Fondo gris claro */
+      color: black;
+      width: 500px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      z-index: 1000;
+    }
+
+    /* Títulos de las secciones */
+    .dropdown-header {
+      font-size: 1.1rem; /* Tamaño más grande */
+      font-weight: bold;
+      margin: 0.5rem 0; /* Menor espacio entre títulos */
+    }
+
+    /* Estilo para las listas */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 0.3rem 0; /* Reduce el espacio entre botones */
+        margin: 0; /* Sin margen extra */
+
+        a {
+          text-decoration: none;
+          color: #232f3e;
+        }
+
+        a:hover {
+          color: #ff9900;
+        }
+      }
+    }
+
+    /* Distribución en dos columnas */
+    .categories-grid {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3rem 0; /* Reduce espacio entre grupos */
+    }
+
+    /* Estilo para cupones */
+    .coupons-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* Pie del menú */
+    .menu-footer {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: #232f3e;
+      }
+
+      a:hover {
+        color: #ff9900;
+      }
+    }
+
+    /* Línea divisoria */
+    hr {
+      border: 0;
+      height: 2px; /* Grosor aumentado */
+      background-color: #d3d3d3; /* Gris claro */
+      margin: 0.5rem 0; /* Reduce el espacio vertical */
+    }
+  }
+
+  /* Mostrar el menú desplegable al hacer hover */
+  .menu-container:hover .dropdown-menu {
+    display: block;
+  }
+
+  /* Barra de búsqueda */
+  .search-bar {
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+    display: flex;
+    margin: 0 1rem;
+
+    input {
+      padding: 0.7rem;
+      width: 100%; /* Ocupa todo el ancho disponible */
+      border: 1px solid #ccc;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+    }
+
+    button {
+      padding: 0.7rem 1.2rem;
+      background-color: #febd69;
+      border: 1px solid #febd69;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+
+  /* Botones a la derecha */
+  .right-buttons {
+    display: flex;
+    align-items: center;
+
+    a {
+      padding: 0.7rem 1.2rem;
+      color: #d3d3d3;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+}
+
+
+
+
